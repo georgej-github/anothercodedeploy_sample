@@ -5,4 +5,6 @@ echo "while true; do { echo -e 'HTTP/1.1 200 OK\r\n'; cat /webapps/Config/config
 chmod +x /tmp/dummyserver.sh
 nohup /tmp/dummyserver.sh &
 
-exit 0
+echo "done" > /home/ec2-user/StartApp.log
+
+
