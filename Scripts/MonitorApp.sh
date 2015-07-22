@@ -1,10 +1,13 @@
 #!/bin/sh
 
-fuser 80/tcp
+#fuser 80/tcp
 
-ret=$?
+#ret=$?
 
-if [ $ret -eq 0 ]; then
-  echo "Service is running!" > /home/ec2-user/service_status.log
-fi
+#if [ $ret -eq 0 ]; then
+#  echo "Service is running!" > /home/ec2-user/service_status.log
+#fi
+
+echo "done" > /home/ec2-user/service_status.log
+
 
