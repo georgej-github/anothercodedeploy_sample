@@ -1,6 +1,6 @@
 #!/bin/sh
 
-fuser -k 80/tcp
+kill `ps aux | grep dummyserver | grep -v grep | awk '{print $2}'`
 
 rm -rf /webapps/*
 
